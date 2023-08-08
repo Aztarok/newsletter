@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+:root {
+    box-sizing: border-box;
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: Roboto;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-slate-grey);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    overflow: hidden;
+    background-color: var(--white);
+    height: 60%;
+    width: 50%;
+    border-radius: 2rem;
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    padding-left: 80px;
+    font-size: 18px;
+    color: var(--charcoal-grey);
+    gap: 1.5rem;
+}
+
+.text > span:nth-child(1) {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.image {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    padding: 30px;
+    min-width: 50%;
+}
+
+.ending-message {
+    display: none;
+}
+
+.attribution {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15px;
+    color: var(--white);
+}
+
+.attribution > a {
+    color: var(--tomato);
+}
